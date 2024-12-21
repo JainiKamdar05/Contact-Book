@@ -34,7 +34,7 @@ contacts = [func() for func in contact_functions]
 
 max_length = max(len(contact) for contact in contacts)
 for contact in contacts:
-    contact.extend(["N/A"] * (max_length - len(contact)))  
+    contact.extend(["N/A"] * (max_length - len(contact))) 
 
 
 headers = ["NAME", "PHONE_NUMBER", "CITY"]
